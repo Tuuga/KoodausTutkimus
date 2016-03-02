@@ -13,6 +13,7 @@ public class Mobile_Input : MonoBehaviour {
 	public GameObject xParent;
 
 	public bool useAccelerometer;
+	public bool useTouch;
 	public float accFilterCut;
 	public float accUpdateTweak = 1;
 	float accY;
@@ -37,29 +38,17 @@ public class Mobile_Input : MonoBehaviour {
 	}
 
 	void RotateCube () {
-		if (Input.touchCount == 0 && useAccelerometer) { //GyroRot
-
+		if (Input.touchCount == 0 && useAccelerometer || !useTouch) { //GyroRot
 			SmoothAccelerometer();
-			/*		// Attempt at a lowpass filter
-			accY = Mathf.Lerp(lowPassValue.y * 90, Input.acceleration.y *	90, accUpdateTweak);
-			accX = Mathf.Lerp(lowPassValue.x * -90, Input.acceleration.x * -90, accUpdateTweak);
-
-			xParent.transform.localRotation = Quaternion.Lerp(Quaternion.Euler(accY, 0, 0), Quaternion.Euler(Input.acceleration), accUpdateTweak);
-			yParent.transform.localRotation = Quaternion.Lerp(Quaternion.Euler(0, accX, 0), Quaternion.Euler(Input.acceleration), accUpdateTweak);
-
-			if (lowPassValue.magnitude - Input.acceleration.magnitude > accFilterCut || lowPassValue.magnitude - Input.acceleration.magnitude < -accFilterCut) {
-				lowPassValue = Input.acceleration;
-			}
-			*/
 		}
 
-		if (Input.touchCount == 1) { // Rotate
+		if (Input.touchCount == 1 && useTouch) { // Rotate
 			Vector2 touchDelta = Input.touches[0].deltaPosition;
 			xParent.transform.Rotate(new Vector3(touchDelta.y, 0, 0));
 			yParent.transform.Rotate(new Vector3(0, -touchDelta.x, 0));
 		}
 
-		if (Input.touchCount == 2) { // Scale
+		if (Input.touchCount == 2 && useTouch) { // Scale
 			transform.localScale = Vector3.one * ((Input.touches[0].position - Input.touches[1].position).magnitude / 220);
 		}
 	}
@@ -81,12 +70,12 @@ public class Mobile_Input : MonoBehaviour {
 
 	void SetDebugText() {
 		if (Input.touchCount > 0) {
-			debugTextString = "";
+			debugTextString = "Touch Count: " + Input.touchCount;
 			for (int i = 0; i < Input.touchCount; i++) {
 				debugTextString += "\n Touch " + i;
 			}
 		} else {
-			debugTextString = "";
+			debugTextString = "Touch Count: 0";
 		}
 		debugText.text = debugTextString;
 	}
