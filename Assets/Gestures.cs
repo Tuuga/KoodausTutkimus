@@ -6,8 +6,9 @@ public class Gestures : MonoBehaviour {
 
 	public Text gestureText;
 
-	enum AllGestures { SwipeUp, SwipeDown, SwipeLeft, SwipeRight, PinchIn, PinchOut };
+	public enum AllGestures { SingleTap, TapHold, DoubleTap, SwipeUp, SwipeDown, SwipeLeft, SwipeRight, PinchIn, PinchOut };
 	AllGestures currentGesture;
+	public AllGestures lastGesture;
 
 	Vector2 touchStartPoint;
 	Vector2 touchEndPoint;
@@ -18,23 +19,60 @@ public class Gestures : MonoBehaviour {
 
 	float twoTouchLastDist;
 
+	public float tapTime;
+	public float doubleTapTime;
+	public float gestureCooldown;
+	float gestureCooldownTimer;
+	bool gestureUsed;
+
+	// <Swipe Data>
+	public float minTime = Mathf.Infinity;
+	public float avarageTime;
+	public float maxTime;
+	public float avarageBetweenTime;
+
+	float timesSwiped;
+	float allSwipeTimeCombined;
+	float allBetweenCombined;
+	public float timeBetweenTouch;
+	// </Swipe Data>
+
 	float touchTime;
 
 	void Update () {
-		if (Input.touchCount == 1) {
-			OneTouchGestures();
-			touchTime += Time.deltaTime;
-		} else if (Input.touchCount == 2) {
-			TwoTouchGestures();
-		} else {
-			touchTime = 0;
+		if (gestureUsed) {
+			gestureCooldownTimer += Time.deltaTime;
+			if (gestureCooldownTimer > gestureCooldown) {
+				gestureUsed = false;
+				gestureCooldownTimer = 0;
+			}
 		}
 
+		if (!gestureUsed) {
+			if (Input.touchCount == 1) {
+				touchTime += Time.deltaTime;
+				OneTouchGestures();
+			} else if (Input.touchCount == 2) {
+				TwoTouchGestures();
+			} else {
+				touchTime = 0;
+				timeBetweenTouch += Time.deltaTime;
+			}
+		}
 		SetGestureText();
 	}
 
 	void SetGestureText () {
 		
+		if (currentGesture == AllGestures.SingleTap) {
+			gestureText.text = "Single Tap";
+		}
+		if (currentGesture == AllGestures.TapHold) {
+			gestureText.text = "Touch Time: " + touchTime + "\nTap Hold";
+		}
+		if (currentGesture == AllGestures.DoubleTap) {
+			gestureText.text = "Double Tap";
+		}
 		if (currentGesture == AllGestures.SwipeUp) {
 			gestureText.text = "Touch Time: " + touchTime + "\nSwipe Up\nStart Point: " + touchStartPoint + "\nEnd Point: " + touchEndPoint;
 		}
@@ -69,6 +107,11 @@ public class Gestures : MonoBehaviour {
 			}
 		}
 
+		if (Input.GetTouch(0).phase == TouchPhase.Ended || Input.GetTouch(1).phase == TouchPhase.Ended) {
+			gestureUsed = true;
+			lastGesture = currentGesture;
+		}
+
 		twoTouchLastDist = (touchOnePos - touchTwoPos).magnitude;
 	}
 
@@ -76,9 +119,32 @@ public class Gestures : MonoBehaviour {
 
 		if (Input.GetTouch(0).phase == TouchPhase.Began) {
 			touchStartPoint = Input.GetTouch(0).position;
+			allBetweenCombined += timeBetweenTouch;
+			avarageBetweenTime = allBetweenCombined / timesSwiped;
 		}
-		
+
+		if (touchTime > tapTime && Input.GetTouch(0).phase == TouchPhase.Stationary) {
+			currentGesture = AllGestures.TapHold;
+		}
+
 		if (Input.GetTouch(0).phase == TouchPhase.Ended) {
+			timesSwiped++;
+			allSwipeTimeCombined += touchTime;
+			avarageTime = allSwipeTimeCombined / timesSwiped;
+			if (minTime > touchTime) {
+				minTime = touchTime;
+			}
+			if (maxTime < touchTime) {
+				maxTime = touchTime;
+			}
+
+			if (touchTime < tapTime) {
+				currentGesture = AllGestures.SingleTap;
+			}
+			if (touchTime < tapTime && timeBetweenTouch < doubleTapTime && lastGesture == AllGestures.SingleTap) {
+				currentGesture = AllGestures.DoubleTap;
+			}
+
 			touchEndPoint = Input.GetTouch(0).position;
 			touchDir = (touchEndPoint - touchStartPoint).normalized;
 
@@ -98,6 +164,9 @@ public class Gestures : MonoBehaviour {
 				currentGesture = AllGestures.SwipeDown;
 				touchDir = Vector2.zero;
 			}
+			gestureUsed = true;
+			lastGesture = currentGesture;
+			timeBetweenTouch = 0;
 		}
 	}
 }
