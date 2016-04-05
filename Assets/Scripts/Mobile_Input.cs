@@ -19,7 +19,7 @@ public class Mobile_Input : MonoBehaviour {
 
 	public float forceMultiplier;
 	//public GameObject plane;
-	Rigidbody rb;
+	//Rigidbody rb;
 
 	float accY;
 	float accX;
@@ -29,7 +29,7 @@ public class Mobile_Input : MonoBehaviour {
 	string debugTextString;
 
 	void Start () {
-		rb = GetComponent<Rigidbody>();
+		//rb = GetComponent<Rigidbody>();
 		loggedAcc = new Vector3[logAccAmount];
 		for (int i = 0; i < logAccAmount; i++) {
 			loggedAcc[i] = Vector3.zero;
