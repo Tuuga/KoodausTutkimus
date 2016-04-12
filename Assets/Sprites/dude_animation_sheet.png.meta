@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: bbabc8d3929f3c34aa254b530bc1ee0f
+timeCreated: 1460109002
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dude_animation_sheet_0
+    21300002: dude_animation_sheet_1
+    21300004: dude_animation_sheet_2
+    21300006: dude_animation_sheet_3
+    21300008: dude_animation_sheet_4
+    21300010: dude_animation_sheet_5
+    21300012: dude_animation_sheet_6
+    21300014: dude_animation_sheet_7
+    21300016: dude_animation_sheet_8
+    21300018: dude_animation_sheet_9
+    21300020: dude_animation_sheet_10
+    21300022: dude_animation_sheet_11
+    21300024: dude_animation_sheet_12
+    21300026: dude_animation_sheet_13
+    21300028: dude_animation_sheet_14
+    21300030: dude_animation_sheet_15
+    21300032: dude_animation_sheet_16
+    21300034: dude_animation_sheet_17
+    21300036: dude_animation_sheet_18
+    21300038: dude_animation_sheet_19
+    21300040: dude_animation_sheet_20
+    21300042: dude_animation_sheet_21
+    21300044: dude_animation_sheet_22
+    21300046: dude_animation_sheet_23
+    21300048: dude_animation_sheet_24
+    21300050: dude_animation_sheet_25
+    21300052: dude_animation_sheet_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dude_animation_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 67}
+        - {x: -19, y: 64}
+        - {x: -59, y: 6}
+        - {x: -59, y: -36}
+        - {x: -57, y: -60}
+        - {x: -28, y: -66}
+        - {x: 39, y: -66}
+        - {x: 64, y: -31}
+        - {x: 64, y: 49}
+        - {x: 48, y: 67}
+    - name: dude_animation_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: -20}
+        - {x: 63, y: -6}
+        - {x: 51, y: 6}
+        - {x: 46, y: 4}
+        - {x: 42, y: 4}
+        - {x: 38, y: -1}
+        - {x: 44, y: 6}
+        - {x: 48, y: 9}
+        - {x: 63, y: 33}
+        - {x: 63, y: 61}
+        - {x: 44, y: 67}
+        - {x: -44, y: 67}
+        - {x: -59, y: 17}
+        - {x: -59, y: -67}
+        - {x: 30, y: -67}
+        - {x: 46, y: -59}
+        - {x: 45, y: -44}
+        - {x: 40, y: -40}
+        - {x: 60, y: -28}
+    - name: dude_animation_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: -27}
+        - {x: 62, y: -8}
+        - {x: 59, y: 2}
+        - {x: 50, y: 3}
+        - {x: 62, y: 23}
+        - {x: 62, y: 50}
+        - {x: 49, y: 67}
+        - {x: -25, y: 67}
+        - {x: -60, y: 23}
+        - {x: -60, y: -53}
+        - {x: -55, y: -54}
+        - {x: 7, y: -69}
+        - {x: 30, y: -69}
+        - {x: 45, y: -57}
+        - {x: 42, y: -48}
+        - {x: 39, y: -45}
+    - name: dude_animation_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: -1}
+        - {x: 62, y: 16}
+        - {x: 62, y: 53}
+        - {x: 51, y: 66}
+        - {x: -20, y: 66}
+        - {x: -55, y: 15}
+        - {x: -55, y: -56}
+        - {x: -11, y: -70}
+        - {x: 44, y: -70}
+        - {x: 62, y: -40}
+        - {x: 62, y: -13}
+        - {x: 61, y: -9}
+    - name: dude_animation_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 65}
+        - {x: -49, y: 11}
+        - {x: -49, y: -69}
+        - {x: -39, y: -72}
+        - {x: -26, y: -73}
+        - {x: 60, y: -73}
+        - {x: 61, y: -63}
+        - {x: 61, y: 54}
+        - {x: 52, y: 65}
+    - name: dude_animation_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54, y: 64}
+        - {x: -20, y: 64}
+        - {x: -46, y: 12}
+        - {x: -46, y: -73}
+        - {x: 47, y: -73}
+        - {x: 61, y: -36}
+        - {x: 61, y: 62}
+    - name: dude_animation_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 874
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 65}
+        - {x: -8, y: 65}
+        - {x: -39, y: 44}
+        - {x: -43, y: 4}
+        - {x: -43, y: -68}
+        - {x: -41, y: -71}
+        - {x: 38, y: -71}
+        - {x: 58, y: -35}
+        - {x: 63, y: 1}
+        - {x: 63, y: 54}
+    - name: dude_animation_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 66}
+        - {x: -21, y: 66}
+        - {x: -44, y: 55}
+        - {x: -44, y: -72}
+        - {x: 33, y: -72}
+        - {x: 47, y: -52}
+        - {x: 60, y: 19}
+        - {x: 60, y: 55}
+    - name: dude_animation_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: -9}
+        - {x: -40, y: -36}
+        - {x: -24, y: -72}
+        - {x: -19, y: -73}
+        - {x: 10, y: -73}
+        - {x: 60, y: -43}
+        - {x: 60, y: 65}
+        - {x: -20, y: 65}
+        - {x: -26, y: 62}
+    - name: dude_animation_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 68}
+        - {x: -40, y: 41}
+        - {x: -40, y: -58}
+        - {x: -31, y: -71}
+        - {x: 23, y: -71}
+        - {x: 59, y: -19}
+        - {x: 59, y: 68}
+    - name: dude_animation_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 69}
+        - {x: -26, y: 67}
+        - {x: -39, y: 8}
+        - {x: -39, y: -68}
+        - {x: 17, y: -68}
+        - {x: 60, y: 33}
+        - {x: 60, y: 53}
+        - {x: 49, y: 69}
+    - name: dude_animation_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 68}
+        - {x: -42, y: 57}
+        - {x: -42, y: -69}
+        - {x: 17, y: -69}
+        - {x: 61, y: 10}
+        - {x: 61, y: 67}
+        - {x: 56, y: 68}
+    - name: dude_animation_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: 68}
+        - {x: -25, y: 68}
+        - {x: -44, y: 23}
+        - {x: -44, y: -70}
+        - {x: 19, y: -70}
+        - {x: 24, y: -68}
+        - {x: 62, y: 24}
+        - {x: 62, y: 51}
+    - name: dude_animation_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 724
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 69}
+        - {x: -49, y: 45}
+        - {x: -49, y: -63}
+        - {x: -46, y: -65}
+        - {x: 40, y: -65}
+        - {x: 63, y: -4}
+        - {x: 63, y: 69}
+    - name: dude_animation_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 68}
+        - {x: -58, y: 11}
+        - {x: -58, y: -56}
+        - {x: -54, y: -58}
+        - {x: -41, y: -62}
+        - {x: 44, y: -62}
+        - {x: 62, y: -8}
+        - {x: 62, y: 68}
+    - name: dude_animation_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 68}
+        - {x: -60, y: -29}
+        - {x: -60, y: -47}
+        - {x: -57, y: -55}
+        - {x: -15, y: -63}
+        - {x: 28, y: -63}
+        - {x: 49, y: -51}
+        - {x: 62, y: 36}
+        - {x: 62, y: 56}
+        - {x: 48, y: 68}
+    - name: dude_animation_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 67}
+        - {x: -37, y: 31}
+        - {x: -53, y: -4}
+        - {x: -53, y: -58}
+        - {x: -37, y: -65}
+        - {x: 42, y: -65}
+        - {x: 53, y: -62}
+        - {x: 61, y: -22}
+        - {x: 61, y: 63}
+        - {x: 50, y: 67}
+    - name: dude_animation_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: 66}
+        - {x: -8, y: 66}
+        - {x: -35, y: 43}
+        - {x: -45, y: -1}
+        - {x: -45, y: -65}
+        - {x: -37, y: -67}
+        - {x: 41, y: -67}
+        - {x: 47, y: -65}
+        - {x: 61, y: 13}
+        - {x: 61, y: 54}
+        - {x: 55, y: 64}
+    - name: dude_animation_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: 65}
+        - {x: -22, y: 65}
+        - {x: -38, y: 48}
+        - {x: -46, y: -1}
+        - {x: -46, y: -69}
+        - {x: 35, y: -69}
+        - {x: 38, y: -68}
+        - {x: 37, y: -57}
+        - {x: 61, y: 23}
+        - {x: 61, y: 63}
+    - name: dude_animation_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: 65}
+        - {x: -19, y: 65}
+        - {x: -46, y: 55}
+        - {x: -46, y: -70}
+        - {x: 37, y: -70}
+        - {x: 38, y: -53}
+        - {x: 62, y: 19}
+        - {x: 62, y: 64}
+    - name: dude_animation_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 574
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 65}
+        - {x: -41, y: 53}
+        - {x: -41, y: -57}
+        - {x: -35, y: -71}
+        - {x: 39, y: -71}
+        - {x: 61, y: -4}
+        - {x: 61, y: 65}
+    - name: dude_animation_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 64}
+        - {x: -21, y: 64}
+        - {x: -38, y: 32}
+        - {x: -38, y: -67}
+        - {x: -31, y: -75}
+        - {x: 17, y: -75}
+        - {x: 41, y: -34}
+        - {x: 60, y: 11}
+        - {x: 60, y: 58}
+    - name: dude_animation_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 424
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 65}
+        - {x: -17, y: 65}
+        - {x: -42, y: 22}
+        - {x: -42, y: -39}
+        - {x: -24, y: -74}
+        - {x: 4, y: -74}
+        - {x: 11, y: -73}
+        - {x: 48, y: -36}
+        - {x: 60, y: -8}
+        - {x: 60, y: 52}
+    - name: dude_animation_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 424
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: 66}
+        - {x: -8, y: 66}
+        - {x: -26, y: 63}
+        - {x: -48, y: -2}
+        - {x: -48, y: -49}
+        - {x: -38, y: -73}
+        - {x: 0, y: -73}
+        - {x: 60, y: -33}
+        - {x: 60, y: 59}
+    - name: dude_animation_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 424
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 28}
+        - {x: 62, y: 60}
+        - {x: 45, y: 66}
+        - {x: -15, y: 66}
+        - {x: -48, y: 22}
+        - {x: -48, y: -51}
+        - {x: -42, y: -73}
+        - {x: 0, y: -73}
+        - {x: 7, y: -72}
+        - {x: 56, y: -29}
+        - {x: 54, y: -14}
+        - {x: 48, y: -8}
+    - name: dude_animation_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 424
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 66}
+        - {x: -46, y: 49}
+        - {x: -51, y: 35}
+        - {x: -51, y: -72}
+        - {x: -48, y: -73}
+        - {x: 36, y: -73}
+        - {x: 62, y: -42}
+        - {x: 62, y: 66}
+    - name: dude_animation_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 424
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 66}
+        - {x: -55, y: 0}
+        - {x: -55, y: -29}
+        - {x: -53, y: -52}
+        - {x: -45, y: -66}
+        - {x: -40, y: -71}
+        - {x: 60, y: -71}
+        - {x: 61, y: -62}
+        - {x: 61, y: 61}
+        - {x: 54, y: 66}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
