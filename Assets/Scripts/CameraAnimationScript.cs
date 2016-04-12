@@ -6,6 +6,7 @@ public class CameraAnimationScript : MonoBehaviour {
 	public Transform focus;
 	Animator cameraAnim;
 	public float smooth;
+	public float animationFloatTest;
 
 	bool playAnimation;
 

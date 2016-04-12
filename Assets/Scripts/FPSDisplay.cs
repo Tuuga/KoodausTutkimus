@@ -3,10 +3,10 @@ using System.Collections;
 
 public class FPSDisplay : MonoBehaviour {
 	float deltaTime = 0.0f;
-	GameManager gm;
+	SpawnerUIManager gm;
 
 	void Start () {
-		gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+		gm = GameObject.Find("SpawnerUIManager").GetComponent<SpawnerUIManager>();
 	}
 
 	void Update () {

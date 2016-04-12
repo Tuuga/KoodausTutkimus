@@ -33,7 +33,9 @@ public class GamePad_Input : MonoBehaviour {
 		// if left mouse button held, mouse acts as a pointer
 		// else acts as mouse delta (first person controls)
 		if (Input.GetKey(KeyCode.Mouse0)) {
-			indicatorThree.transform.position += indicatorThreePos;
+			Vector3 newThreePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+			newThreePos.z = 0;
+			indicatorThree.transform.position = newThreePos;
 		} else {
 			indicatorThree.transform.position = indicatorThreePos;
 		}

@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnerScript : MonoBehaviour {
 
 	public GameObject ball;
-	GameManager gm;
+	SpawnerUIManager gm;
 	public float spawnOffset;
 	public float spawnInterval;
 	float spawnX = -4.5f;
@@ -16,7 +16,7 @@ public class SpawnerScript : MonoBehaviour {
 	void Start () {
 		spawnX = -spawnOffset;
 		spawnZ = -spawnOffset;
-		gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+		gm = GameObject.Find("SpawnerUIManager").GetComponent<SpawnerUIManager>();
 	}
 	
 	void Update () {

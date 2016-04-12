@@ -4,7 +4,7 @@ using UnityEditor;
 using System.Collections;
 
 
-public class GameManager : MonoBehaviour {
+public class SpawnerUIManager : MonoBehaviour {
 
 	public Text text;
 	string checkpoint;
