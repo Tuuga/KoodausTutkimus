@@ -4,6 +4,7 @@ using System.Collections;
 public class CameraAnimationScript : MonoBehaviour {
 
 	public Transform focus;
+	public GameObject dude;
 	Animator cameraAnim;
 	public float smooth;
 	public float animationFloatTest;
@@ -25,6 +26,7 @@ public class CameraAnimationScript : MonoBehaviour {
 			Quaternion lookRot = Quaternion.LookRotation(focus.position - transform.position);
 			transform.rotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * smooth);
 		}
+		dude.transform.LookAt(transform);
 	}
 
 	// Called at the of the animation
