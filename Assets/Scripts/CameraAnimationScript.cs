@@ -3,15 +3,12 @@ using System.Collections;
 
 public class CameraAnimationScript : MonoBehaviour {
 
-	public Transform focus;
+	public Transform target;
 	
 	Animator cameraAnim;
 	public float smooth;
 	public float animationFloatTest;
-	bool playAnimation;
-
-
-	public GameObject dude;
+	bool lookAtTarget;
 
 	void Start () {
 		cameraAnim = GetComponent<Animator>();
@@ -20,24 +17,23 @@ public class CameraAnimationScript : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			playAnimation = true;
-			cameraAnim.SetBool("Start", true);
+			cameraAnim.Play("CameraAnimation");
+			lookAtTarget = true;
 		}
 
-		if (playAnimation == true) {
+		if (lookAtTarget == true) {
 			
-			Quaternion lookRot = Quaternion.LookRotation(focus.position - transform.position);
+			Quaternion lookRot = Quaternion.LookRotation(target.position - transform.position);
 			transform.rotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * smooth);
 			
 			//LookAt jitters with animations
 			//transform.LookAt(focus);
 		}
-		dude.transform.LookAt(transform);
 	}
 
 	// Called at the of the animation
-	public void SetStartFalse () {
-		cameraAnim.SetBool("Start", false);
-		playAnimation = false;
+	public void AnimationEnd () {
+		lookAtTarget = false;
+		cameraAnim.Play("Idle");
 	}
 }
