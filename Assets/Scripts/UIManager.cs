@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour {
 		}
 	}
 
-	public void SetText () {
+	public void ButtonClickCounter () {
 		timesPressed++;
 		buttonText.text = "Times Pressed: " + timesPressed;
 	}

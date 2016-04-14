@@ -4,12 +4,14 @@ using System.Collections;
 public class CameraAnimationScript : MonoBehaviour {
 
 	public Transform focus;
-	public GameObject dude;
+	
 	Animator cameraAnim;
 	public float smooth;
 	public float animationFloatTest;
-
 	bool playAnimation;
+
+
+	public GameObject dude;
 
 	void Start () {
 		cameraAnim = GetComponent<Animator>();
@@ -23,8 +25,12 @@ public class CameraAnimationScript : MonoBehaviour {
 		}
 
 		if (playAnimation == true) {
+			
 			Quaternion lookRot = Quaternion.LookRotation(focus.position - transform.position);
 			transform.rotation = Quaternion.Lerp(transform.rotation, lookRot, Time.deltaTime * smooth);
+			
+			//LookAt jitters with animations
+			//transform.LookAt(focus);
 		}
 		dude.transform.LookAt(transform);
 	}
