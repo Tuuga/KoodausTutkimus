@@ -9,9 +9,15 @@ public class UIManager : MonoBehaviour {
 
 	int timesPressed;
 
+	GameObject box;
+	public Material[] rgb;
+	Dropdown dd;
+
 	void Start () {
 		text = GameObject.Find("Text").GetComponent<Text>();
 		buttonText = GameObject.Find("ButtonText").GetComponent<Text>();
+		dd = GameObject.Find("Dropdown").GetComponent<Dropdown>();
+		box = GameObject.Find("Box");
 	}
 
 	void Update () {
@@ -24,5 +30,9 @@ public class UIManager : MonoBehaviour {
 	public void ButtonClickCounter () {
 		timesPressed++;
 		buttonText.text = "Times Pressed: " + timesPressed;
+	}
+
+	public void ColorPick () {
+		box.GetComponent<MeshRenderer>().material = rgb[dd.value];
 	}
 }
