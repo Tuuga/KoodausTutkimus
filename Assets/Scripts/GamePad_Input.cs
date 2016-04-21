@@ -40,9 +40,7 @@ public class GamePad_Input : MonoBehaviour {
 			indicatorThree.transform.position = indicatorThreePos;
 		}
 
-
-
-		float x1 = Mathf.Round(Input.GetAxis("Horizontal") * 10f) / 10;
+        float x1 = Mathf.Round(Input.GetAxis("Horizontal") * 10f) / 10;
 		float y1 = Mathf.Round(Input.GetAxis("Vertical") * 10f) / 10;
 
 		float x2 = Mathf.Round(Input.GetAxis("Horizontal2") * 10f) / 10;
