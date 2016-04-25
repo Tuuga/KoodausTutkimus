@@ -4,20 +4,17 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour {
 
-	Text text;
-	Text buttonText;
+	public Text text;
+    public Text worldText;
+	public Text buttonText;
 
 	int timesPressed;
 
-	GameObject box;
-	public Material[] rgb;
-	Dropdown dd;
+    string[] worldTextStrings = { "Yes?", "Hmmm?", "What you want?", "Something need doing?", "Work, work.", "Whaaat?", "Me busy. Leave me alone!!", "No time for play.", "Me not that kind of orc!"};
+    int orcCalls;
 
 	void Start () {
-		text = GameObject.Find("Text").GetComponent<Text>();
-		buttonText = GameObject.Find("ButtonText").GetComponent<Text>();
-		dd = GameObject.Find("Dropdown").GetComponent<Dropdown>();
-		box = GameObject.Find("Box");
+		
 	}
 
 	void Update () {
@@ -32,7 +29,12 @@ public class UIManager : MonoBehaviour {
 		buttonText.text = "Times Pressed: " + timesPressed;
 	}
 
-	public void ColorPick () {
-		box.GetComponent<MeshRenderer>().material = rgb[dd.value];
-	}
+    public void WorldButton () {
+        worldText.text = worldTextStrings[orcCalls];
+        if (orcCalls < worldTextStrings.Length - 1) {
+            orcCalls++;
+        } else {
+            orcCalls = 0;
+        }
+    }
 }
