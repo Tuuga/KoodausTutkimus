@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
 using System.Collections;
-
 
 public class SpawnerUIManager : MonoBehaviour {
 
@@ -11,7 +9,6 @@ public class SpawnerUIManager : MonoBehaviour {
 	int checkpointInt;
 	int balls;
 	float fps;
-	
 
 	void Update () {
 		if (balls >= 250 && checkpointInt == 0) {
@@ -48,8 +45,5 @@ public class SpawnerUIManager : MonoBehaviour {
 	}
 	public void SetFps (float newFps) {
 		fps = newFps;
-		if (fps < 4f) {
-			EditorApplication.isPaused = true;
-		}
 	}
 }

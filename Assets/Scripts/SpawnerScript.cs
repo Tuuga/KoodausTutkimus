@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+#if UNITY_EDITOR
 public class SpawnerScript : MonoBehaviour {
 
 	public GameObject ball;
@@ -46,3 +47,4 @@ public class SpawnerScript : MonoBehaviour {
 		}
 	}
 }
+#endif

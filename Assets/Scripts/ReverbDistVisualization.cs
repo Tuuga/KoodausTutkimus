@@ -1,13 +1,20 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEditor;
 using System.Collections;
+
 
 [ExecuteInEditMode]
 public class ReverbDistVisualization : MonoBehaviour {
 
     public AudioReverbZone[] reverbZone;
+    public AudioSource aSource;
 
     void Update () {
+
+        if (!aSource.isPlaying) {
+            //aSource.Play();
+        }
 
         for (int i = 0; i < reverbZone.Length; i++) {
             float minDist = reverbZone[i].minDistance;
@@ -26,3 +33,4 @@ public class ReverbDistVisualization : MonoBehaviour {
         }
     }
 }
+#endif
