@@ -4,8 +4,8 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour {
 
-	public Text text;
-    public Text worldText;
+	public Text counterText;
+    public Text orcText;
 	public Text buttonText;
 
 	int timesPressed;
@@ -13,16 +13,9 @@ public class UIManager : MonoBehaviour {
     string[] worldTextStrings = { "Yes?", "Hmmm?", "What you want?", "Something need doing?", "Work, work.", "Whaaat?", "Me busy. Leave me alone!!", "No time for play.", "Me not that kind of orc!"};
     int orcCalls;
 
-	void Start () {
-		
-	}
-
 	void Update () {
-
-		if (Input.inputString != "") {
-			text.text = Input.inputString;
-		}
-	}
+        counterText.text = "" + Mathf.Round(Time.time);
+    }
 
 	public void ButtonClickCounter () {
 		timesPressed++;
@@ -30,7 +23,7 @@ public class UIManager : MonoBehaviour {
 	}
 
     public void WorldButton () {
-        worldText.text = worldTextStrings[orcCalls];
+        orcText.text = worldTextStrings[orcCalls];
         if (orcCalls < worldTextStrings.Length - 1) {
             orcCalls++;
         } else {
