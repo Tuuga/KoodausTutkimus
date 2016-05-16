@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class UIManager : MonoBehaviour {
@@ -21,6 +22,12 @@ public class UIManager : MonoBehaviour {
 		timesPressed++;
 		buttonText.text = "Times Pressed: " + timesPressed;
 	}
+
+    public void ReloadScene () {
+        Scene thisScene = SceneManager.GetActiveScene();
+        string thisSceneName = thisScene.name;
+        SceneManager.LoadScene(thisSceneName);
+    }
 
     public void WorldButton () {
         orcText.text = worldTextStrings[orcCalls];

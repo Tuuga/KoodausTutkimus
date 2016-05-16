@@ -47,6 +47,9 @@ public class PlayerMovement : MonoBehaviour {
 		if (_mouseLock && !gameOver)
 			MouseRotate();
 
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+            MouseLock();
+
         //hpBar.fillAmount = health / 100f;
 
         if (_immuneTime > 0) {
@@ -56,8 +59,6 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (Input.GetKeyDown(KeyCode.LeftAlt))
-			MouseLock();
 		if (!gameOver)
 			Movement();
 	}

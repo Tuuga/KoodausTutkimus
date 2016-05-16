@@ -12,10 +12,6 @@ public class ReverbDistVisualization : MonoBehaviour {
 
     void Update () {
 
-        if (!aSource.isPlaying) {
-            //aSource.Play();
-        }
-
         for (int i = 0; i < reverbZone.Length; i++) {
             float minDist = reverbZone[i].minDistance;
             float maxDist = reverbZone[i].maxDistance;
